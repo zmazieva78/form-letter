@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <link href="css/bootstrap.css" rel="stylesheet" type="text/css">
+    <link href="css/styles.css" rel="stylesheet" type="text/css">
+    <script src="js/jquery-3.4.1.js"></script>
+    <script src="js/scripts.js"></script>
+    <title>Letter form</title>
+  </head>
+
+  <body>
+    <div class="container">
+      <h1>Fill in all the blanks on your order</h1>
+      <div>
+        <form id="form">
+          <div class="form-group">
+            <label for="name">Name</label>
+            <input id="name" class="form-control" type="text">
+          </div>
+          <div class="form-group">
+            <label for="lastName">Last name</label>
+            <input id="lastName" class="form-control" type="text">
+          </div>
+          <div class="form-group">
+            <label for="order">Order number</label>
+            <input id="order" class="form-control" type="text">
+          </div>
+          <div class="form-group">
+            <label for="date">Date of order</label>
+            <input id="date" class="form-control" type="text">
+          </div>
+          <div class="form-group">
+            <label for="item">Item</label>
+            <input id="item" class="form-control" type="text">
+          </div>
+          <div class="form-group">
+            <label for="issue">Issue</label>
+            <input id="issue" class="form-control" type="text">
+          </div>
+
+          <button type="submit" class="btn btn-primary">Submit</button>
+        </form>
+      </div>
+
+      <div id="letter">
+        <h2>Letter</h2>
+        <p>Hello, <span class="name"></span> <span class="lastName"></span>,</p>
+       <p> Thank you for contacting us about your order #<span class="order"></span> that you purchased the product <span class="item"></span> on this date <span class="date"></span>.Your issue is <span class="issue"></span> will be addressed to our Customer Service department. Let us process it withing 3 business days and  we will let you know our decision.</p>
+       <p>Sincerely,</p>
+       <p>Sears.com</p>
+      </div>
+
+    </div>
+
+  </body>
+</html>
